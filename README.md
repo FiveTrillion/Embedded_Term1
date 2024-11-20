@@ -2,12 +2,6 @@
 > 무인운반차량(AGV)를 인공지능을 활용하여 재활용 쓰레기를 인식하고 분리수거하는 프로젝트입니다.
 
 ![agv사진](./forreadme/AGV.png)
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
-한 두 문단으로 프로젝트 소개 글을 작성합니다.
-
-![](../header.png)
 
 ## 설치 방법
 
