@@ -1,6 +1,6 @@
-# Project Title
+# 무인운반차량 재활용 쓰레기 자동 분리수거 프로젝트
 
-One Paragraph of project description goes here
+무인운반차량(AGV)를 인공지능을 활용하여 재활용 쓰레기를 인식하고 분리수거하는 프로젝트입니다.
 
 ## Getting Started
 
