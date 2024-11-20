@@ -3,8 +3,8 @@
 
 ![agv사진](./forreadme/AGV.png)
 
-## 설치 방법
-
+## 기술 스택
+![js](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)
 OS X & 리눅스:
 
 ```sh
