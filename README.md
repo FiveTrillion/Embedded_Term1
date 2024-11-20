@@ -14,7 +14,7 @@
 GUI 원격 제어기로 chat-GPT 명령 입력하면 MQTT를 이용해 명령을 읽어서 동작을 수행
 ## 2) GUI 원격 제어기
 ![img](./forreadme/examplegui.jpeg)   
-GUI 원격 제어기는 iPhone으로 
+GUI 원격 제어기는 iPhone 사용   
 GUI 원격 제어기는 아래와 같이 크게 두 가지 기능
 1. 실시간 모니터링으로 긴급 정지
 2. AGV 원격 소통 및 카메라 연결로 모니터 역할
