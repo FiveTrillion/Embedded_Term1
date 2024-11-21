@@ -23,6 +23,9 @@ GUI 원격 제어기는 아래와 같이 크게 두 가지 기능
 ```sh
 mosquitto –c mosquitto.conf –v
 ```
+2. IP를 이용해 paho-mqtt 라이브러리에서 publish
+AGV to iPhone.ipynb
+
 ## 4)Cloud Database
 Cloud Database의 역할은 GUI 원격 제어기로부터 받은 Data를 저장하고, Data를 전송하여 Web Visualization을 수행하는 역할이다. 우리는 Firebase 기반의 Cloud Database 를 운영하여 서버리스 방식으로 서버를 운영한다. 
 ## 5)OpenAI API 를 이용한 로그 데이터 분석
