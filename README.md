@@ -1,7 +1,10 @@
 # 무인운반차량 재활용 쓰레기 자동 분리수거 프로젝트
 > 무인운반차량(AGV) 인공지능을 활용하여 재활용 쓰레기를 인식하고 분리수거하는 프로젝트입니다.
 
-![agv사진](./forreadme/AGV.png)
+![agv사진](./forreadme/AGV.png)   
+
+   
+![plan](./forreadme/afterplan.png)
 
 ## 기술 스택
 ![ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
