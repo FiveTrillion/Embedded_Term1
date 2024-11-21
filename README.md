@@ -18,9 +18,14 @@ GUI 원격 제어기는 iPhone 사용
 GUI 원격 제어기는 아래와 같이 크게 두 가지 기능
 1. 실시간 모니터링으로 긴급 정지
 2. AGV 원격 소통 및 카메라 연결로 모니터 역할
-## 3)Cloud Database
+## 3)MQTT protocol
+1. Broker 서버 열기
+```sh
+mosquitto –c mosquitto.conf –v
+```
+## 4)Cloud Database
 Cloud Database의 역할은 GUI 원격 제어기로부터 받은 Data를 저장하고, Data를 전송하여 Web Visualization을 수행하는 역할이다. 우리는 Firebase 기반의 Cloud Database 를 운영하여 서버리스 방식으로 서버를 운영한다. 
-## 4)OpenAI API 를 이용한 로그 데이터 분석
+## 5)OpenAI API 를 이용한 로그 데이터 분석
 DB에 쌓이는 데이터를 OpenAI 의 API를 이용해 GPT 모델로 분석을 시킨다. 
 분석을 통해 현재 AGV가 어떤 상황에 처해 있는 지를 분석할 수 있으며, 유효하지 않은 데이터를 분석할 수 있다. 해당 분석을 통해 사용자에게 추가적인 안내를 할 수도 있다.
 ```sh
