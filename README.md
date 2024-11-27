@@ -31,15 +31,18 @@ Cloud Database의 역할은 GUI 원격 제어기로부터 받은 Data를 저장�
 ## 5)OpenAI API 를 이용한 로그 데이터 분석
 DB에 쌓이는 데이터를 OpenAI 의 API를 이용해 GPT 모델로 분석을 시킨다. 
 분석을 통해 현재 AGV가 어떤 상황에 처해 있는 지를 분석할 수 있으며, 유효하지 않은 데이터를 분석할 수 있다. 해당 분석을 통해 사용자에게 추가적인 안내를 할 수도 있다.   
-iOS에서 한 기능들   
-1. MQTT 통신
-   -CocoaMQTT 라이브러리 활용
-3. Joystick
-4. OpenAI API
- - gpt3.5-turbo 사용한 프롬프트
- - WhisperAPI(Speech to text 음성인식)
-4. Firebase Firestore
+iOS에서 한 기능들
 
+MQTT 통신
+-> CocoaMQTT 라이브러리를 활용함.
+-> connection 확인하고 subscribe, publish 함
+
+Joystick
+-> 기존 AGV와 컨트롤러 간의 통신에서 대각선으로 이동하는 것에 대한 분석을 함.
+-> 조이스틱의 x축의 위치, y축의 위치 두 가지를 보내는 것을 확인.
+
+OpenAI API (1) gpt3.5-turbo 사용한 프롬프트 시작, 멈춰, 잡아, 놔줘에 해당하는 결과값을 받도록 함. (2) WhisperAPI (Speech-To-Text 음성인식) Whisper는 최대 25MB만 허용해. 이 오디오 용량을 줄이기위해 비트레이트, 음질들을 낮추고 m4a 파일을 AAC로 변환해. AAC => m4a 바꿔서 저장해.
+FirebaseFirestore (1) Publish 한 내용들을 다 저장함. 앱을 실행한 시점을 Collection으로 잡고, 각 명령어가 실행된 시점을 Document로 잡음.
 
 윈도우:
 
