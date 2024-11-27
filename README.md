@@ -30,10 +30,16 @@ mosquitto –c mosquitto.conf –v
 Cloud Database의 역할은 GUI 원격 제어기로부터 받은 Data를 저장하고, Data를 전송하여 Web Visualization을 수행하는 역할이다. 우리는 Firebase 기반의 Cloud Database 를 운영하여 서버리스 방식으로 서버를 운영한다. 
 ## 5)OpenAI API 를 이용한 로그 데이터 분석
 DB에 쌓이는 데이터를 OpenAI 의 API를 이용해 GPT 모델로 분석을 시킨다. 
-분석을 통해 현재 AGV가 어떤 상황에 처해 있는 지를 분석할 수 있으며, 유효하지 않은 데이터를 분석할 수 있다. 해당 분석을 통해 사용자에게 추가적인 안내를 할 수도 있다.
-```sh
-npm install my-crazy-module --save
-```
+분석을 통해 현재 AGV가 어떤 상황에 처해 있는 지를 분석할 수 있으며, 유효하지 않은 데이터를 분석할 수 있다. 해당 분석을 통해 사용자에게 추가적인 안내를 할 수도 있다.   
+iOS에서 한 기능들   
+1. MQTT 통신
+   -CocoaMQTT 라이브러리 활용
+3. Joystick
+4. OpenAI API
+ - gpt3.5-turbo 사용한 프롬프트
+ - WhisperAPI(Speech to text 음성인식)
+4. Firebase Firestore
+
 
 윈도우:
 
